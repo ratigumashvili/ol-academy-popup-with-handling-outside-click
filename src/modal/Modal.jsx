@@ -23,6 +23,34 @@ const Modal = ({ handleModalToggle }) => {
             &times;
           </button>
         </div>
+        <div className="modal-body">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus
+            autem quibusdam adipisci quos, id repellat impedit perspiciatis a
+            fugiat, aliquid voluptatibus magni sint nihil vitae minima error
+            nobis quia quaerat.
+          </p>
+        </div>
+        <div className="modal-footer">
+          <button
+            className="btn btn-main"
+            onClick={() => {
+              handleModalToggle();
+              console.log("Confirmed");
+            }}
+          >
+            Confirm
+          </button>
+          <button
+            className="btn btn-cancel"
+            onClick={() => {
+              handleModalToggle();
+              console.log("Canceled");
+            }}
+          >
+            Cancel
+          </button>
+        </div>
       </div>
     </div>
   );

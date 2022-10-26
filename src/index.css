@@ -20,18 +20,27 @@ body {
   border: unset;
   background: unset;
   padding: 15px;
+  border-radius: 5px;
   cursor: pointer;
   transition: all 0.25s ease;
 }
 
 .btn-main {
-  border-radius: 5px;
   background-color: rgb(62, 103, 129);
+  color: white;
+}
+
+.btn-cancel {
+  background-color: rgb(225, 56, 90);
   color: white;
 }
 
 .btn-main:hover {
   background-color: rgb(47, 78, 97);
+}
+
+.btn-cancel:hover {
+  background-color: rgb(169, 17, 47);
 }
 
 .btn-close {
@@ -51,11 +60,14 @@ body {
 }
 
 .modal-content {
-  min-width: 500px;
+  width: 100%;
+  max-width: 500px;
   min-height: 500px;
   padding: 0 15px 15px 15px;
   border-radius: 15px;
   background-color: white;
+  display: flex;
+  flex-direction: column;
 }
 
 .modal-header {
@@ -66,4 +78,19 @@ body {
 
 .modal-header h1 {
   margin-right: 1rem;
+}
+
+.modal-body p {
+  line-height: 26px;
+}
+
+.modal-footer {
+  display: flex;
+  gap: 15px;
+  margin-top: auto;
+}
+
+.modal-footer button {
+  width: 100%;
+  margin-left: auto;
 }
